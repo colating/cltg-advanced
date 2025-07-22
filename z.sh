@@ -14,9 +14,11 @@ committer_timestamp=$((author_timestamp + 480))
 # 3. 提交
 export GIT_AUTHOR_DATE=$(date -d "@$author_timestamp" +"%Y-%m-%d %H:%M:%S")
 export GIT_COMMITTER_DATE=$(date -d "@$committer_timestamp" +"%Y-%m-%d %H:%M:%S")
-git commit -m "提交信息 x1"
+git commit -m "提交信息 x2"
 # git commit  --dry-run -m "提交信息 $GIT_COMMITTER_DATE"
+
 git push
+
 
 # 4. 输出
 echo "-----------------------"
